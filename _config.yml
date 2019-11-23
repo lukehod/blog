@@ -49,6 +49,10 @@ url: http://lukehod.net
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+# This is used to show what part of a post will be shown as an exerpt on the main
+# page. Anything below this tag place on the post will be excluded.
+excerpt_separator: "<!--more-->"
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
