@@ -1,10 +1,17 @@
+# ignore jekyll metadata
 _site
+.sass-cache
 .DS_Store
 .jekyll
+.jekyll-cache
 .jekyll-metadata
+
+# ignore bundle generated folder
 .bundle
-.sass-cache
-Gemfile
-Gemfile.lock
+vendor/
+
 node_modules
 package.json
+
+# allow a TODO notes files
+TODO*
