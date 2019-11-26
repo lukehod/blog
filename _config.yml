@@ -77,6 +77,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Set pagination options (for use with jekyll-pagination plugin)
+# see: https://jekyllrb.com/docs/pagination/
 paginate: 2
 
 # Use the following plug-ins
@@ -84,6 +85,7 @@ plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate # Allow pagination of blog posts
+  - jekyll-seo-tag # add metadata tags for search engines and social networks
 
 # Exclude these files from your production _site
 exclude:
