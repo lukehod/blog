@@ -10,3 +10,4 @@ gem "jekyll", "~> 4.0"
 gem 'jekyll-sitemap'
 gem 'jekyll-feed'
 gem 'jekyll-paginate'
+gem 'jekyll-seo-tag'
