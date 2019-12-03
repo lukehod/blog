@@ -1,50 +1,20 @@
----
-layout: post
-title: Access your RPi from any network using Screen and Ngrok
-author: Luke Hodnett
-published: false
----
-
-Here is a quick description of the article.
-<!--more-->
-
----
-First install ngrok.
-```sh
-$ cd ~
-$ sudo wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
-$ sudo unzip ngrok-stable-linux-arm.zip
-```
-go to https://dashboard.ngrok.com/auth to get auth info (need to sign up for a free account to get one)
-```sh
-$ ./ngrok authtoken <YOUR_AUTH_TOKEN>
-```
----
-Then install screen
-```sh
-$ sudo apt-get update
-$ sudo apt-get install screen
-```
----
-Then run ngrok with screen and leave running
-```sh
-$ screen bash
-$ ./ngrok tcp 22
-$ ctrl-a <release> ctrl-d
-$ screen -list
-$ screen -r
-$ exit
-```
----
-Connect via ssh
----
-See ngrok docs: https://ngrok.com/docs
-or screen man page: https://linux.die.net/man/1/screen
-
-
-
-
-# Dillinger
+# Transfer Files to Raspberry Pi using Ethernet Cable from PC
+#F!Zjh1ESYI!IUGq6Ef0cQT_gaM2lQJ-Dg!87wzhJRS
+#F!H9oTVK7C!EXTmGVgVCaXqop_gAmkbXw
+#F!ujBHAKAT!M6RXf7FTYj9OVhpgtjB79A
+#F!9VNEhYZK!-K8qyl83dqtX-DKDTnXmZg
+1) Go to NETWORK & INTERNET SETTINGS before connecting any cable (otherwise Pi won't be assigned IP)
+2) Go to NETWORK & SHARING CENTER
+3) Click on "Wireless Network Connection" under "Connections:"
+4) Click "Properties"
+5) Click "Sharing" tab
+6) Make sure "Allow other network users to connect..." AND "Allow other network users to control..." radio button is pressed
+7) Select ethernet from drop down and hit "OK"
+8) Connect Ethernet to Pi and PC
+9) Go back to NETWORK & SHARING CENTER and clock "Ethernet" under "Connections:"
+10) Click "Properties"->"Internet Protocol Version 4" and note the IP Adress and subnet mask
+11) Use a program such as Advance IP Scanner to search for Pi IP address from IP from previous step up to subnet mask max (i.e. 192.168.137.1-255)
+12) Use that IP in Filezilla to connect and Voila!
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
@@ -225,3 +195,4 @@ MIT
    [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
    [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
    [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
+

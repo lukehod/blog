@@ -1,47 +1,8 @@
----
-layout: post
-title: Access your RPi from any network using Screen and Ngrok
-author: Luke Hodnett
-published: false
----
-
-Here is a quick description of the article.
-<!--more-->
-
----
-First install ngrok.
-```sh
-$ cd ~
-$ sudo wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
-$ sudo unzip ngrok-stable-linux-arm.zip
-```
-go to https://dashboard.ngrok.com/auth to get auth info (need to sign up for a free account to get one)
-```sh
-$ ./ngrok authtoken <YOUR_AUTH_TOKEN>
-```
----
-Then install screen
-```sh
-$ sudo apt-get update
-$ sudo apt-get install screen
-```
----
-Then run ngrok with screen and leave running
-```sh
-$ screen bash
-$ ./ngrok tcp 22
-$ ctrl-a <release> ctrl-d
-$ screen -list
-$ screen -r
-$ exit
-```
----
-Connect via ssh
----
-See ngrok docs: https://ngrok.com/docs
-or screen man page: https://linux.die.net/man/1/screen
+# How to get colored output when using git in the terminal
+When using git at the command line, it is often much easier to 
 
 
+REF: https://unix.stackexchange.com/questions/44266/how-to-colorize-output-of-git
 
 
 # Dillinger
@@ -90,7 +51,7 @@ Dillinger uses a number of open source projects to work properly:
 * [node.js] - evented I/O for the backend
 * [Express] - fast node.js network app framework [@tjholowaychuk]
 * [Gulp] - the streaming build system
-* [Breakdance](http://breakdance.io) - HTML to Markdown converter
+* [Breakdance](https://breakdance.github.io/breakdance/) - HTML to Markdown converter
 * [jQuery] - duh
 
 And of course Dillinger itself is open source with a [public repository][dill]
@@ -122,7 +83,7 @@ Dillinger is currently extended with the following plugins. Instructions on how 
 | Plugin | README |
 | ------ | ------ |
 | Dropbox | [plugins/dropbox/README.md][PlDb] |
-| Github | [plugins/github/README.md][PlGh] |
+| GitHub | [plugins/github/README.md][PlGh] |
 | Google Drive | [plugins/googledrive/README.md][PlGd] |
 | OneDrive | [plugins/onedrive/README.md][PlOd] |
 | Medium | [plugins/medium/README.md][PlMe] |
@@ -134,7 +95,7 @@ Dillinger is currently extended with the following plugins. Instructions on how 
 Want to contribute? Great!
 
 Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantanously see your updates!
+Make a change in your file and instantaneously see your updates!
 
 Open your favorite Terminal and run these commands.
 
@@ -225,3 +186,4 @@ MIT
    [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
    [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
    [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
+

@@ -8,7 +8,7 @@ layout: default
   </div>
 
   <div class="author">
-    written by: {{ page.author }}
+    {% if page.author %} written by: {{ page.author }} {% endif %}
   </div>
 
   <div class="entry">
